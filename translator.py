@@ -5,7 +5,7 @@ from gtts import gTTS, lang  # for text speech
 from googletrans import Translator  # provides translation functions
 
 # setting app's title, icon & layout
-st.set_page_config(page_title="Simply! Translate", page_icon="🎯")
+st.set_page_config(page_title="Advo Translate", page_icon="🎯")
 
 
 def get_key(val):
@@ -30,10 +30,10 @@ def main():
     langs = lang.tts_langs()
 
     # display current date & header
-    st.header("Translate your thoughts.")
+    st.header("Advo Translator")
     st.write(f"Date : {date.today()}")
 
-    input_text = st.text_input("Enter whatever")  # gets text to translate
+    input_text = st.text_input("Enter the text")  # gets text to translate
     lang_choice = st.selectbox(
         "Language to translate: ", list(langs.values())
     )  # shows the supported languages list as selectbox options
